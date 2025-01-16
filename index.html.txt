@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAVNOR PROF-FILE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            background-color: #007bff;
+        }
+        .navbar-brand, .navbar-nav .nav-link {
+            color: white !important;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">DAVNOR PROF-FILE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Development Plans</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="my-4">DavNor's Professional Profile and Development Gateway</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">Your Profile</div>
+                    <div class="card-body text-center">
+                        <img src="https://via.placeholder.com/150" alt="Profile Photo" class="profile-photo">
+                        <form action="#" method="POST" enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <label for="profilePhoto" class="form-label">Upload Profile Photo</label>
+                                <input class="form-control" type="file" id="profilePhoto" name="profilePhoto">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Upload</button>
+                        </form>
+                        <hr>
+                        <p><strong>Name:</strong> Jane Doe</p>
+                        <p><strong>Position:</strong> Administrative Assistant</p>
+                        <p><strong>Office:</strong> DepEd Davao del Norte</p>
+                        <p><strong>Birthdate:</strong> January 1, 1990</p>
+                        <p><strong>Years in Service:</strong> 10</p>
+                        <p><strong>Years in Current Position:</strong> 5</p>
+                        <p><strong>Civil Status:</strong> Single</p>
+                        <p><strong>IPCR Rating:</strong> Outstanding</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-success text-white">Your Development Plans</div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Training: Effective Communication Skills <span class="badge bg-success">Completed</span></li>
+                            <li>Training: Advanced MS Excel <span class="badge bg-danger">Pending</span></li>
+                            <li>Training: Leadership Development <span class="badge bg-warning">Ongoing</span></li>
+                        </ul>
+                        <button class="btn btn-primary mt-3">Upload Certificate</button>
+                        <button class="btn btn-secondary mt-3">Print Report</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 DepEd Davao del Norte - DAVNOR PROF-FILE</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
